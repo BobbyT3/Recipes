@@ -18,12 +18,13 @@
         color: purple;
     }
 
-    #Title {
+    #title {
         background-color: black;
     }
 
     h1 {
         color: white;
+        background-color: black;
     }
 
     .read,
@@ -31,19 +32,36 @@
         color: yellow;
         background-color: green;
     }
+
+      
+    .read {
+       font-size: 20px;
+    }
+
+    .unread {
+        font-family: bold;
+    }
+
+    .sub.preview,
+    .sub.header {
+        color: turquoise;
+    }
 </style>
 
 </head>
 
 <body>
-   
  
-    <h1 id="Title">Odin Recipes</h1>
+    <h1 id="title">Odin Recipes</h1>
     <h3>entrees</h3>
     <p class="read">Brief description></p>
+    
+    <div class="sub header">Latest Posts</div>
     <p class="unread">Brief description></p>
 
     <ol>      
+        
+        <p class="sub preview">This is the post preview</p>
         <li><a href="recipes/alfredo.html"> Chicken Alfredo</a></li>
         <img src="images/alfredo.png" alt="delicious chicken alfredo bowl" height="250" width="215">
        
